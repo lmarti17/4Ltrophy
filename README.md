@@ -1,8 +1,11 @@
-# Front-End starter
+# Appel d'offre | 4L Trophy
 
- Includes Bootstrap and JQuery 2.1.4
+### Dev Team
 
-### Informations
+	- Lucas Martin (CTO & Front-end)
+	- Elhaddad Malidi (Front-end)
+
+### Content
 The directories:
 * __sass/__
     * views/ (Each part of your sass)  
@@ -15,7 +18,7 @@ The directories:
 * __stylesheets/__ (The compiled scss in *app.css*)
 
 
-### How to install
+### Installation
 
 1. Download the repo
 
