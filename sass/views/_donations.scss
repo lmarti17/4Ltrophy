@@ -260,11 +260,15 @@
                     {
                         text-transform: uppercase;
                         font-size: 13px;
+                        line-height: 21px;
                         &.italic
                         {
                             font-style: italic;
 
                             text-transform: lowercase;
+                        }
+                        span {
+                            text-align: left;
                         }
                     }
                 }

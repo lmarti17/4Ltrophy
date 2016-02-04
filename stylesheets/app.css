@@ -338,9 +338,14 @@ body {
             display: block;
             margin: auto;
             content: 'Jour'; }
-      #donation .daily-donations .day-range .single-day .content p {
-        text-transform: uppercase;
-        font-size: 13px; }
-        #donation .daily-donations .day-range .single-day .content p.italic {
-          font-style: italic;
-          text-transform: lowercase; }
+      #donation .daily-donations .day-range .single-day .content {
+        margin-left: 5px; }
+        #donation .daily-donations .day-range .single-day .content p {
+          text-transform: uppercase;
+          font-size: 13px;
+          line-height: 21px; }
+          #donation .daily-donations .day-range .single-day .content p.italic {
+            font-style: italic;
+            text-transform: lowercase; }
+          #donation .daily-donations .day-range .single-day .content p span {
+            text-align: left; }
