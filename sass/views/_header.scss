@@ -1,0 +1,36 @@
+header
+{
+    height: 80px;
+
+    box-shadow: 0 3px 5px $pale-grey;
+
+    widows: 100%;
+    ul
+    {
+        float: right;
+
+        height: 80px;
+        margin: 0 15px;
+        li
+        {
+            line-height: 20px;
+
+            display: inline-block;
+
+            margin: 20px 0;
+            padding: 10px 15px;
+            a
+            {
+                font-size: 1em;
+
+                text-transform: uppercase;
+
+                color: $grey;
+            }
+            &:last-child
+            {
+                border-left: 1px solid $grey;
+            }
+        }
+    }
+}

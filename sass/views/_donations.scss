@@ -1,0 +1,274 @@
+#donation
+{
+    width: 50%;
+    padding: 25px 0;
+
+    color: $grey;
+    h1
+    {
+        font-size: 2em;
+        font-weight: 500;
+
+        margin-bottom: 10px;
+        padding: 0 25px;
+
+        text-align: center;
+    }
+    h2.subtitle
+    {
+        margin-bottom: 50px;
+        padding: 0 25px;
+
+        text-align: center;
+    }
+    .row
+    {
+        margin-right: 0;
+        margin-left: 0 ;
+    }
+    //////////
+    // Progression bar style
+    //////////
+    .level
+    {
+        position: relative;
+
+        height: 80px;
+        margin: 0 25px 50px 25px;
+
+        text-transform: uppercase;
+        .level-background
+        {
+            position: relative;
+
+            width: 60%;
+            height: 20px;
+            margin: auto;
+
+            border-radius: 10px;
+            background-color: $pale-grey;
+            &:before
+            {
+                font-size: 13px;
+
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+
+                content: 'Départ';
+            }
+            &:after
+            {
+                font-size: 13px;
+
+                position: absolute;
+                right: 0;
+                bottom: -20px;
+
+                content: 'Arrivée';
+            }
+            .level-real
+            {
+                position: relative;
+
+                width: 65%;
+                height: 20px;
+
+                border-radius: 10px;
+                background-image: linear-gradient(60deg, $dark-orange, $pale-orange);;
+                &:after
+                {
+                    font-size: 13px;
+
+                    position: absolute;
+                    top: -20px;
+                    right: -10px;
+
+                    content: attr(data-content) '%';
+                }
+            }
+        }
+        p
+        {
+            margin-top: 30px;
+
+            text-align: center;
+        }
+        .biarritz-img
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .marrakesh-img
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    } //End of block progression bar style
+    //////////
+    // Global donation statistics style
+    //////////
+    .global-donation
+    {
+        position: relative;
+        .donation-statistics
+        {
+            display: flex;
+
+            margin-bottom: 50px;
+
+            border-top: 1px solid $pale-grey;
+            border-bottom: 1px solid $pale-grey;
+            .numbers
+            {
+                padding: 0;
+
+                border-right: 1px solid $pale-grey;
+                .total-donation
+                {
+                    display: flex;
+
+                    padding: 25px 0;
+
+                    text-align: center;
+                    .amount-donation
+                    {
+                        width: 60%;
+
+                        border-right: 1px solid $pale-grey;
+                    }
+                    .amount-percentage
+                    {
+                        width: 40%;
+                    }
+                }
+                .total-donation-bottom
+                {
+                    display: flex;
+
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    border-top: 1px solid $pale-grey;
+                    .donor
+                    {
+                        width: 50%;
+                        padding: 25px 0;
+
+                        border-right: 1px solid $pale-grey;
+                    }
+                    .days-left
+                    {
+                        width: 50%;
+                        padding: 25px 0;
+                    }
+                }
+                h2
+                {
+                    font-size: 1.5em;
+                }
+            }
+            .contribute-button-parent
+            {
+                padding: 0;
+                a
+                {
+                    color: $grey;
+                    img
+                    {
+                        display: block;
+
+                        margin: auto;
+                    }
+                    &:after
+                    {
+                        font-size: 13px;
+                        font-style: italic;
+
+                        content: 'Paiement sécurisé';
+                    }
+                }
+            }
+        }
+        .make-donation
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: none;
+        }
+    }// End of block global statistics 
+    //////////
+    // Daily donation style
+    //////////
+    .daily-donations
+    {
+        .day-range
+        {
+            margin: 50px 0;
+            .single-day
+            {
+                display: flex;
+                .visual-icon
+                {
+                    font-size: 1.5em;
+
+                    position: relative;
+
+                    width: 64px;
+                    height: 64px;
+
+                    text-align: center;
+
+                    color: $grey;
+                    background: url('../assets/buttons/grey-bg-button.png') no-repeat center;
+                    background-size: cover;
+                    &.passed
+                    {
+                        color: $white;
+                        background: url('../assets/buttons/orange-bg-button.png') no-repeat center;
+                        background-size: cover;
+                    }
+                    &.active
+                    {
+                        color: $white;
+                        background: url('../assets/buttons/blue-bg-button.png') no-repeat center;
+                        background-size: cover;
+                    }
+                    h3
+                    {
+                        margin-top: 10px;
+                        &:after
+                        {
+                            font-size: 1rem;
+
+                            display: block;
+
+                            margin: auto;
+
+                            content: 'Jour';
+                        }
+                    }
+                }
+                .content
+                {
+                    margin-left: 5px;
+                    p
+                    {
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        &.italic
+                        {
+                            font-style: italic;
+
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
