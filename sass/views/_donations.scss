@@ -113,14 +113,15 @@
     .global-donation
     {
         position: relative;
+
+        margin-bottom: 50px;
+
+        border-top: 1px solid $pale-grey;
+        border-bottom: 1px solid $pale-grey;
         .donation-statistics
         {
+            // display: none;
             display: flex;
-
-            margin-bottom: 50px;
-
-            border-top: 1px solid $pale-grey;
-            border-bottom: 1px solid $pale-grey;
             .numbers
             {
                 padding: 0;
@@ -194,10 +195,24 @@
         }
         .make-donation
         {
-            position: absolute;
-            top: 0;
-            left: 0;
+            padding: 25px 0;
+            h2
+            {
+                display: inline-block;
+            }
+            form
+            {
+                display: inline;
+                input[type=number]
+                {
+                    width: 100px;
 
+                    border-radius: 5px solid $dark-blue;
+                }
+            }
+            // position: absolute;
+            // top: 0;
+            // left: 0;
             display: none;
         }
     }// End of block global statistics 
@@ -258,16 +273,18 @@
                     margin-left: 5px;
                     p
                     {
-                        text-transform: uppercase;
                         font-size: 13px;
                         line-height: 21px;
+
+                        text-transform: uppercase;
                         &.italic
                         {
                             font-style: italic;
 
                             text-transform: lowercase;
                         }
-                        span {
+                        span
+                        {
                             text-align: left;
                         }
                     }

@@ -1,0 +1,83 @@
+
+#presentation
+{
+    width: 50%;
+    padding: 25px 15px;
+
+    color: $grey;
+    p.intro
+    {
+        margin: 40px 60px;
+
+        text-align: center;
+    }
+    h1.title
+    {
+        font-size: 2em;
+
+        margin: 25px 0;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .content
+    {
+        p
+        {
+            margin: 15px;
+        }
+    }
+    //SPACEMENT 
+    .spacement1
+    {
+        font-size: 13px;
+        line-height: 1.5;
+
+        margin-top: 8%;
+        padding-left: 8%;
+
+        text-align: right;
+        p.blue
+        {
+            color: $dark-blue;
+        }
+    }
+    .spacement2
+    {
+        font-size: 	13px;
+        line-height: 1.5;
+
+        margin-top: 2%;
+        padding-right: 10%;
+
+        text-align: left;
+        p.blue
+        {
+            color: $dark-blue;
+        }
+    }
+    // NORMAL TEXT POLICE
+    // BOLDCENTER 
+    .boldcenter
+    {
+        font-family: $mainFont;
+        font-weight: bold;
+
+        text-align: center;
+
+        background: -webkit-linear-gradient($dark-orange, $pale-orange);
+        -webkit-background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+    }
+    p.catchphrase
+    {
+        margin-top: 40px;
+
+        text-align: center;
+        span
+        {
+            text-transform: uppercase;
+        }
+    }
+}
