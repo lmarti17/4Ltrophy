@@ -11,6 +11,7 @@ catch(Exception $e){
 	die('Could not connect');
 }
 
+$list = [];
 $req = $db->prepare('SELECT donor, amount, date FROM donation');
 $req->execute();
 
@@ -18,31 +19,15 @@ while ($row = $req->fetch(PDO::FETCH_ASSOC)) {
 
 	$totalDonation += $row['amount'];
 	$totalDonor += 1;
+
+	$list[] = $row;
 }
 $pourcentageDonation = $totalDonation/10;
 $toDoStill = 100 - $pourcentageDonation;
 
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-	<link rel="stylesheet" href="stylesheets/app.css">
-</head>
-<body>
-	<header>
-		<ul>
-			<li><a href="#">Accueil</a></li>
-			<li><a href="#">Pauline & Margaux</a></li>
-			<li><a href="#">L'Association</a></li>
-			<li><a href="#">Aide</a></li>
-			<li><a href="#">F</a></li>
-		</ul>
-	</header>
+<?php require 'header.php' ?>
 	<div class="wrapper">
 		<!-- div map -->
 		<div id="map"></div>
@@ -111,7 +96,7 @@ $toDoStill = 100 - $pourcentageDonation;
 
 						<!-- Display the payment button. -->
 						<input type="image" name="submit" border="0"
-						src="assets/donation-button.png"
+						src="assets/buttons/donation-button.png"
 						alt="PayPal - The safer, easier way to pay online">
 						<img alt="" border="0" width="1" height="1"
 						src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
@@ -236,9 +221,4 @@ $toDoStill = 100 - $pourcentageDonation;
 	</div>
 </div>
 
-
-
-<script src="js/dist/vendor.js"></script>
-<script src="js/dist/app.js"></script>
-</body>
-</html>
+<?php require 'footer.php' ?>
