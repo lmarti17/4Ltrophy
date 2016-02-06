@@ -69,13 +69,15 @@
             }
             .level-real
             {
-                position: relative;
+                position: absolute;
+                z-index: 2;
 
-                width: 65%;
                 height: 20px;
 
+                transition: all .5s ease-out;
+
                 border-radius: 10px;
-                background-image: linear-gradient(60deg, $dark-orange, $pale-orange);;
+                background-image: linear-gradient(60deg, $dark-orange, $pale-orange);
                 &:after
                 {
                     font-size: 13px;
@@ -85,6 +87,32 @@
                     right: -10px;
 
                     content: attr(data-content) '%';
+                }
+                &.active
+                {
+                    &:after
+                    {
+                        content: '';
+                    }
+                }
+            }
+            .level-possible
+            {
+                z-index: 1;
+
+                background-image: linear-gradient(60deg, $dark-blue, $pale-blue);
+
+                @extend .level-real;
+                &:after
+                {
+                    content: '';
+                }
+                &.active
+                {
+                    &:after
+                    {
+                        content: attr(data-content) '%';
+                    }
                 }
             }
         }
@@ -126,7 +154,16 @@
             {
                 padding: 0;
 
+                transition: 1s all ease-out;
+
                 border-right: 1px solid $pale-grey;
+                background-color: $white;
+                &.active
+                {
+                    transform: translateX(-100%);
+
+                    opacity: 0;
+                }
                 .total-donation
                 {
                     display: flex;
@@ -173,7 +210,18 @@
             }
             .contribute-button-parent
             {
+                margin-top: 40px;
                 padding: 0;
+
+                transition: 1s all ease-out;
+
+                background-color: $white;
+                &.active
+                {
+                    transform: translateX(100%);
+
+                    opacity: 0;
+                }
                 a
                 {
                     color: $grey;
@@ -195,7 +243,13 @@
         }
         .make-donation
         {
-            padding: 25px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: none;
+
+            padding: 25px;
             h2
             {
                 display: inline-block;
@@ -206,14 +260,20 @@
                 input[type=number]
                 {
                     width: 100px;
+                    padding: 5px 10px;
 
-                    border-radius: 5px solid $dark-blue;
+                    text-align: center;
+
+                    color: $pale-blue;
+                    border: 2px solid $pale-blue;
+                    border-radius: 5px;
+                    outline: none;
+                }
+                h2 span
+                {
+                    color: $pale-blue;
                 }
             }
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            display: none;
         }
     }// End of block global statistics 
     //////////

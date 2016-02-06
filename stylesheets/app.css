@@ -167,35 +167,43 @@ html {
   font-style: italic; }
 
 header {
-  height: 80px;
-  box-shadow: 0 3px 5px #ebebeb;
-  widows: 100%; }
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 3px 5px #ebebeb; }
   header ul {
     float: right;
-    height: 80px;
+    height: 60px;
     margin: 0 15px; }
     header ul li {
       line-height: 20px;
       display: inline-block;
-      margin: 20px 0;
+      margin: 10px 0;
       padding: 10px 15px; }
       header ul li a {
         font-size: 1em;
+        text-decoration: none;
         text-transform: uppercase;
         color: #d4d4d4; }
+        header ul li a:hover {
+          text-decoration: none;
+          color: #608af4; }
       header ul li:last-child {
         border-left: 1px solid #d4d4d4; }
 
 body {
-  font-family: Gotham, Trebuchet, Arial; }
+  font-family: Gotham, Trebuchet, Arial;
+  overflow: hidden; }
 
 .wrapper {
   display: flex; }
 
 #map {
+  z-index: 2;
   width: 50%;
-  background: url("../assets/map.png") no-repeat;
+  background-color: #f65;
   background-size: cover; }
+  #map .svg {
+    width: 50%; }
 
 #donation {
   width: 50%;
@@ -238,17 +246,27 @@ body {
         right: 0;
         bottom: -20px;
         content: 'Arrivée'; }
-      #donation .level .level-background .level-real {
-        position: relative;
-        width: 65%;
+      #donation .level .level-background .level-real, #donation .level .level-background .level-possible {
+        position: absolute;
+        z-index: 2;
         height: 20px;
+        transition: all .5s ease-out;
         border-radius: 10px;
         background-image: linear-gradient(60deg, #f65, #fa7); }
-        #donation .level .level-background .level-real:after {
+        #donation .level .level-background .level-real:after, #donation .level .level-background .level-possible:after {
           font-size: 13px;
           position: absolute;
           top: -20px;
           right: -10px;
+          content: attr(data-content) "%"; }
+        #donation .level .level-background .level-real.active:after, #donation .level .level-background .active.level-possible:after {
+          content: ''; }
+      #donation .level .level-background .level-possible {
+        z-index: 1;
+        background-image: linear-gradient(60deg, #416ad3, #608af4); }
+        #donation .level .level-background .level-possible:after {
+          content: ''; }
+        #donation .level .level-background .level-possible.active:after {
           content: attr(data-content) "%"; }
     #donation .level p {
       margin-top: 30px;
@@ -262,15 +280,20 @@ body {
       top: 0;
       right: 0; }
   #donation .global-donation {
-    position: relative; }
+    position: relative;
+    margin-bottom: 50px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb; }
     #donation .global-donation .donation-statistics {
-      display: flex;
-      margin-bottom: 50px;
-      border-top: 1px solid #ebebeb;
-      border-bottom: 1px solid #ebebeb; }
+      display: flex; }
       #donation .global-donation .donation-statistics .numbers {
         padding: 0;
-        border-right: 1px solid #ebebeb; }
+        transition: 1s all ease-out;
+        border-right: 1px solid #ebebeb;
+        background-color: #fff; }
+        #donation .global-donation .donation-statistics .numbers.active {
+          transform: translateX(-100%);
+          opacity: 0; }
         #donation .global-donation .donation-statistics .numbers .total-donation {
           display: flex;
           padding: 25px 0;
@@ -295,7 +318,13 @@ body {
         #donation .global-donation .donation-statistics .numbers h2 {
           font-size: 1.5em; }
       #donation .global-donation .donation-statistics .contribute-button-parent {
-        padding: 0; }
+        margin-top: 40px;
+        padding: 0;
+        transition: 1s all ease-out;
+        background-color: #fff; }
+        #donation .global-donation .donation-statistics .contribute-button-parent.active {
+          transform: translateX(100%);
+          opacity: 0; }
         #donation .global-donation .donation-statistics .contribute-button-parent a {
           color: #d4d4d4; }
           #donation .global-donation .donation-statistics .contribute-button-parent a img {
@@ -309,7 +338,22 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      display: none; }
+      display: none;
+      padding: 25px; }
+      #donation .global-donation .make-donation h2 {
+        display: inline-block; }
+      #donation .global-donation .make-donation form {
+        display: inline; }
+        #donation .global-donation .make-donation form input[type=number] {
+          width: 100px;
+          padding: 5px 10px;
+          text-align: center;
+          color: #608af4;
+          border: 2px solid #608af4;
+          border-radius: 5px;
+          outline: none; }
+        #donation .global-donation .make-donation form h2 span {
+          color: #608af4; }
   #donation .daily-donations .day-range {
     margin: 50px 0; }
     #donation .daily-donations .day-range .single-day {
@@ -341,11 +385,119 @@ body {
       #donation .daily-donations .day-range .single-day .content {
         margin-left: 5px; }
         #donation .daily-donations .day-range .single-day .content p {
-          text-transform: uppercase;
           font-size: 13px;
-          line-height: 21px; }
+          line-height: 21px;
+          text-transform: uppercase; }
           #donation .daily-donations .day-range .single-day .content p.italic {
             font-style: italic;
             text-transform: lowercase; }
           #donation .daily-donations .day-range .single-day .content p span {
             text-align: left; }
+
+#presentation {
+  width: 50%;
+  padding: 25px 15px;
+  color: #d4d4d4; }
+  #presentation p.intro {
+    margin: 40px 60px;
+    text-align: center; }
+  #presentation h1.title {
+    font-size: 2em;
+    margin: 25px 0;
+    text-align: center;
+    text-transform: uppercase; }
+  #presentation .content p {
+    margin: 15px; }
+  #presentation .spacement1 {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 8%;
+    padding-left: 8%;
+    text-align: right; }
+    #presentation .spacement1 p.blue {
+      color: #416ad3; }
+  #presentation .spacement2 {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 2%;
+    padding-right: 10%;
+    text-align: left; }
+    #presentation .spacement2 p.blue {
+      color: #416ad3; }
+  #presentation .boldcenter {
+    font-family: Gotham, Trebuchet, Arial;
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #f65, #fa7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #presentation p.catchphrase {
+    margin-top: 40px;
+    text-align: center; }
+    #presentation p.catchphrase span {
+      text-transform: uppercase; }
+
+#association {
+  width: 50%;
+  padding: 25px 15px;
+  color: #d4d4d4; }
+  #association h1 {
+    font-size: 2em;
+    margin: 25px 0;
+    text-align: center; }
+  #association h3 {
+    margin-bottom: 50px;
+    text-align: center; }
+  #association .content p {
+    margin: 15px; }
+  #association .icons h1,
+  #association .icons h3 {
+    text-align: center; }
+  #association .spacement1 {
+    font-size: 13px;
+    line-height: 1.5; }
+    #association .spacement1 p.blue {
+      color: #416ad3; }
+  #association .spacement2 p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 2%;
+    padding-right: 10%;
+    text-align: left; }
+  #association .spacement2 p.blue {
+    color: #416ad3; }
+  #association .boldcenter {
+    font-family: Gotham, Trebuchet, Arial;
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-linear-gradient(#f65, #fa7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #association .kid {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto; }
+  #association .pictogram1 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto; }
+  #association .pictogram2 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto; }
+  #association .pictogram3 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto; }
+  #association .participatebutton {
+    display: block;
+    margin: auto; }
+  #association p.text-button {
+    margin-bottom: 30px;
+    text-align: center; }
+  #association hr {
+    width: 85%; }

@@ -1,7 +1,14 @@
 #map
 {
-    width: 50%;
+    z-index: 2;
 
-    background: url('../assets/map.png') no-repeat;
+    width: 50%;
+    // background: url('../assets/map.png') no-repeat;
+
+    background-color: $dark-orange;
     background-size: cover;
+    .svg
+    {
+        width: 50%;
+    }
 }
