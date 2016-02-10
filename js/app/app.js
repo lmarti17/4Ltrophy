@@ -28,22 +28,6 @@ $(document).ready(function() {
 		$('header ul li:nth-child(3)').addClass('active');
 	}
 
-
-	//	Script for the video 
-
-	$('.landing-video video').attr('width', $windowWidth);
-	$('.skip-button').on('click', fadeOutTheVideo);
-
-	if (document.getElementById('video-intro') != null) {
-		document.getElementById('video-intro').addEventListener('ended', fadeOutTheVideo, false);
-	}
-
-	function fadeOutTheVideo() {
-		$('.landing-video').fadeOut(750);
-		document.getElementById('video-intro').pause();
-		$('.wrapper').addClass('visible');
-	}
-
 	//help container effect
 
 	$('.help-container').css('width', $windowWidth);
