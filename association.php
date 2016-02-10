@@ -7,7 +7,7 @@
 	</div>
 	<div class="col-md-6 right-container">
 		<div id="association">
-			<h1 class="center">Les Enfants du Desert </h1> 
+			<h1 class="center">Enfants du Desert </h1> 
 			<div class="row">
 
 				<div class="col-md-3  ">
@@ -18,7 +18,7 @@
 
 					<p> Tous les dons effectués sur cette plateforme sont directement reversés à l’association « Enfants du Désert », partenaire du 4L Trophy depuis plusieurs années déjà. Pourquoi ce choix ?</p>
 
-					<p>Les terres sud-marocaines n’offrent pas que belles images et  paysages à traverser le temps d’un voyage en 4L. Toute l’année, ce sont aussi et surtout de nombreuses familles démunies qui habitent  ce climat difficile. </p>
+					<p>Les terres sud-marocaines n’offrent pas que de belles images et de beaux paysages à traverser le temps d’un voyage en 4L. Toute l’année, ce sont aussi et surtout de nombreuses familles démunies qui habitent ce climat difficile. </p>
 
 					<p>Grand frein au développement ? La difficulté d’accès à l’éducation  des jeunes ! Un objectif donc : accompagner les enfants sur le chemin de l’école. Santé, conditions de vie, scolarisation… autant de  champs d’actions visés et nécessaires à la construction d’un avenir favorable.</p>
 

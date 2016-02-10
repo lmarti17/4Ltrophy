@@ -140,7 +140,7 @@ $totalDonorDay = 0;
 		<!-- div donation -->
 		<div id="donation">
 			<h1>4L Trophy</h1>
-			<h2 class="subtitle">Aidez Pauline et Margaux dans leur trajet vers Marrakesh en participant aux dons pour l'Association "Les Enfants du Désert".</h2>
+			<h2 class="subtitle">Aidez Pauline et Margaux dans leur trajet vers Marrakesh en participant aux dons pour l'Association "Enfants du Désert".</h2>
 
 			<!-- Jauge d'avancement des dons -->
 			<div class="row level">

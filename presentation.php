@@ -39,7 +39,7 @@
 				<div class="col-md-6">
 					<p> Le 4L Trophy ! Un raid automobile humanitaire destiné aux étudiants au coeur du Maroc. Autrement dit : un rassemblement géant de Renault 4L dans le désert ! Plutôt cool non ?</p>
 					<p>Du 18 au 28 février 2016, c’est donc plus de 1000 duos surmotivés qui prendront la route de Biarritz à Marrakech. Le notre : l’équipage MP GAZ’L </p>
-					<p>Mais le périple ne se limite pas au franchissement héroïque des dunes ! En partenariat avec l’association Les enfants du déserts, le 4L Trophy et ses participants souhaitent pouvoir apporter leur aide à cette région défavorisée. Encourager l’éducation des enfants du sud-marocain : voilà notre réel objectif.</p>
+					<p>Mais le périple ne se limite pas au franchissement héroïque des dunes ! En partenariat avec l’association "Enfants du désert", le 4L Trophy et ses participants souhaitent pouvoir apporter leur aide à cette région défavorisée. Encourager l’éducation des enfants du sud-marocain : voilà notre réel objectif.</p>
 				</div>
 
 				<div class="col-md-6">
