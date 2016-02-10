@@ -9,10 +9,10 @@
 <body>
 	<header>
 		<ul>
-			<li><a href="index.php">Accueil</a></li>
+			<li class="active"><a href="index.php">Accueil</a></li>
 			<li><a href="presentation.php">Pauline & Margaux</a></li>
 			<li><a href="association.php">L'Association</a></li>
-			<li><a href="aide.php">Aide</a></li>
-			<li><a href="https://www.facebook.com/mpgazl/">F</a></li>
+			<li><a href="#" class="help-link">Aide</a></li>
+			<li><a href="https://www.facebook.com/mpgazl/"><img src="assets/facebook.png" alt="facebook"></a></li>
 		</ul>
 	</header>
