@@ -1,7 +1,7 @@
 
 #presentation
 {
-    width: 50%;
+    margin: 0;
     padding: 25px 15px;
 
     color: $grey;
@@ -13,24 +13,28 @@
     }
     h1.title
     {
-        font-size: 2em;
+        font-size: $titleFontSize;
 
-        margin: 25px 0;
+        margin: 15px 0;
 
         text-align: center;
         text-transform: uppercase;
+
+        color: $pale-orange;
     }
     .content
     {
         p
         {
             margin: 15px;
+            font-family: $gothamBookFont;
+            line-height: 1.4;
         }
     }
     //SPACEMENT 
     .spacement1
     {
-        font-size: 13px;
+        font-size: $smallFontSize;
         line-height: 1.5;
 
         margin-top: 8%;
@@ -44,7 +48,7 @@
     }
     .spacement2
     {
-        font-size: 	13px;
+        font-size: $smallFontSize;
         line-height: 1.5;
 
         margin-top: 2%;
@@ -56,8 +60,6 @@
             color: $dark-blue;
         }
     }
-    // NORMAL TEXT POLICE
-    // BOLDCENTER 
     .boldcenter
     {
         font-family: $mainFont;
@@ -72,12 +74,14 @@
     }
     p.catchphrase
     {
-        margin-top: 40px;
+        margin-top: 15px;
 
         text-align: center;
         span
         {
             text-transform: uppercase;
+
+            color: $pale-orange;
         }
     }
 }

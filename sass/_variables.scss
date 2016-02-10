@@ -3,7 +3,7 @@
 // Main colors
 $black: #000;
 $white: #fff;
-$grey: #d4d4d4;
+$grey: #c6c6c6;
 $pale-grey: #ebebeb;
 
 // Special colors
@@ -24,6 +24,15 @@ $dark-yellow: #f5d486;
 $pale-yellow: #fbde98;
 
 
-// FONTS
+// Fonts
 
 $mainFont: Gotham, Trebuchet, Arial;
+$gothamBookFont: 'Gotham Book', Trebuchet, Arial;
+
+// Fonts size
+
+$smallFontSize: .8125em;
+$normalFontSize: 1em;
+$mediumFontSize: 1.5em;
+$titleFontSize: 1.5em;
+$bigFontSize: 3em;

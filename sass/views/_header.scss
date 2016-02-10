@@ -37,6 +37,13 @@ header
             {
                 border-left: 1px solid $grey;
             }
+            &.active
+            {
+                a
+                {
+                    color: $pale-blue;
+                }
+            }
         }
     }
 }

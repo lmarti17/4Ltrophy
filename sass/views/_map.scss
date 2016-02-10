@@ -1,14 +1,40 @@
 #map
 {
+    position: relative;
     z-index: 2;
 
-    width: 50%;
-    // background: url('../assets/map.png') no-repeat;
-
-    background-color: $dark-orange;
-    background-size: cover;
-    .svg
+    background: url('../assets/map.png') no-repeat;
+    background-size: 100% 100%;
+    img
     {
-        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+    .success-video-container
+    {
+        position: relative;
+        z-index: 25;
+        top: 0;
+        left: 0;
+        display: none;
+
+        width: 100%;
+
+        background-color: $white;
+        #success-video
+        {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+        &.visible
+        {
+            display: inline-block;
+        }
     }
 }
