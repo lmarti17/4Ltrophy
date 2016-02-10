@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var $windowHeight = $(window).height();
 	var $windowWidth = $(window).width();
 
+
 	// set of the values for the right and left panel
 
 	$('#map').css('height', $windowHeight - 60);
@@ -20,12 +21,10 @@ $(document).ready(function() {
 
 	// Check the active menu
 	if ($('.wrapper').hasClass('index')) {
-			$('header ul li:first-child').addClass('active');
-	}
-	else if ($('.wrapper').hasClass('paulineETmargaux')) {
+		$('header ul li:first-child').addClass('active');
+	} else if ($('.wrapper').hasClass('paulineETmargaux')) {
 		$('header ul li:nth-child(2)').addClass('active');
-	}
-	else {
+	} else {
 		$('header ul li:nth-child(3)').addClass('active');
 	}
 
@@ -38,7 +37,6 @@ $(document).ready(function() {
 	if (document.getElementById('video-intro') != null) {
 		document.getElementById('video-intro').addEventListener('ended', fadeOutTheVideo, false);
 	}
-
 
 	function fadeOutTheVideo() {
 		$('.landing-video').fadeOut(750);

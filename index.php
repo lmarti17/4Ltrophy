@@ -92,7 +92,7 @@ function bestOf($array){
 function dateInterval($date) {
 
 	$datetime1 = date_create($date);
-	$datetime2 = date_create('2016-02-10');
+	$datetime2 = date_create('2016-02-17');
 	$interval = date_diff($datetime1, $datetime2);
 	return $interval->format('%a');
 }
