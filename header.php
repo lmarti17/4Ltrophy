@@ -9,7 +9,7 @@
 <body>
 	<header>
 		<ul>
-			<li class="active"><a href="index.php">Accueil</a></li>
+			<li><a href="index.php">Accueil</a></li>
 			<li><a href="presentation.php">Pauline & Margaux</a></li>
 			<li><a href="association.php">L'Association</a></li>
 			<li><a href="#" class="help-link">Aide</a></li>

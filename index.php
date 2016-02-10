@@ -133,7 +133,7 @@ $totalDonorDay = 0;
 	<button class="skip-button">Passer l'intro</button>
 </div>
 
-<div class=" row wrapper">
+<div class=" row wrapper index">
 	<!-- div map -->
 	<div class="col-md-6 left-container">
 		<div id="map">
