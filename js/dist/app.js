@@ -18,6 +18,17 @@ $(document).ready(function() {
 	$('.level-real').css('width', $amountPercentage + '%');
 	$('.level-real').attr('data-content', parseInt($amountPercentage));
 
+	// Check the active menu
+	if ($('.wrapper').hasClass('index')) {
+			$('header ul li:first-child').addClass('active');
+	}
+	else if ($('.wrapper').hasClass('paulineETmargaux')) {
+		$('header ul li:nth-child(2)').addClass('active');
+	}
+	else {
+		$('header ul li:nth-child(3)').addClass('active');
+	}
+
 
 	//	Script for the video 
 
