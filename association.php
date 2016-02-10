@@ -1,7 +1,7 @@
 <?php require 'header.php' ?>
 <?php require 'help.php' ?>
 
-<div class="row wrapper visible association">
+<div class="row wrapper association">
 	<div class="col-md-6 left-container">
 		<div id="map"></div>
 	</div>

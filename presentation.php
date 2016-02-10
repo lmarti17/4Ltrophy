@@ -28,8 +28,6 @@
 					<p class="blue">COPILOTE</p>
 				</div>
 			</div>
-
-
 			<p class="intro">
 				Salut ! Nous sommes Pauline et Margaux, deux étudiantes au coeur vaillant en quête d’aventure. 
 				Depuis un an, nous nous préparons à vivre l’expérience de toute une vie : le 4L Trophy !
