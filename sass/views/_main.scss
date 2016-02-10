@@ -49,14 +49,10 @@ body
 
 div.wrapper
 {
-    display: none;
+    display: block;
     &.row
     {
         margin: 0;
-    }
-    &.visible
-    {
-        display: block;
     }
 }
 

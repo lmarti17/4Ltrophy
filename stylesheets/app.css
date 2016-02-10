@@ -224,11 +224,9 @@ body {
     background-size: cover; }
 
 div.wrapper {
-  display: none; }
+  display: block; }
   div.wrapper.row {
     margin: 0; }
-  div.wrapper.visible {
-    display: block; }
 
 .right-container {
   overflow-x: hidden;
