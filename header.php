@@ -13,6 +13,6 @@
 			<li><a href="presentation.php">Pauline & Margaux</a></li>
 			<li><a href="association.php">L'Association</a></li>
 			<li><a href="#" class="help-link">Aide</a></li>
-			<li><a href="https://www.facebook.com/mpgazl/"><img src="assets/facebook.png" alt="facebook"></a></li>
+			<li><a href="https://www.facebook.com/mpgazl/" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
 		</ul>
 	</header>

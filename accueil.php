@@ -188,7 +188,7 @@ $totalDonorDay = 0;
 						<!-- Number of donors and days left -->
 						<div class="total-donation-bottom">
 							<div class="donor"><h2><?php echo $totalDonor; ?></h2><span>contributeur(s)</span></div>
-							<div class="days-left"><h2>7</h2><span>jours restant(s)</span></div>
+							<div class="days-left"><h2>9</h2><span>jours restant(s)</span></div>
 						</div>
 					</div>
 

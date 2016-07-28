@@ -50,7 +50,7 @@
 
 			</div>
 			<p class='text-button'>Et ce n'est qu'un début ...</p>
-			<a href="index.php" class="participatebutton">
+			<a href="accueil.php" class="participatebutton">
 				<img src="assets/buttons/participons.png" alt="participons" style="max-width:250px">
 			</a>
 		</div>
